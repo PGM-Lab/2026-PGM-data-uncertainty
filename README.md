@@ -174,14 +174,6 @@ Set up the LPID inference engine with a perturbation $\epsilon=0.05$. Then calcu
 infLPID = LPCC_imprecise_empirical(model, data, perturbation=0.05)
 infLPID.prob_sufficiency("X1", "Y")
 ```
-
-    WARNING:polytope.solvers:`polytope` failed to import `cvxopt.glpk`.
-    WARNING:polytope.solvers:will use `scipy.optimize.linprog`
-
-
-
-
-
     [7.724454227344187e-20, 0.4317658471578703]
 
 
@@ -193,10 +185,6 @@ Similarly, with the divide and conquer approach (DC3ID):
 infDC3ID = DCCC_imprecise_empirical(model, data, perturbation=0.05)
 infDC3ID.prob_sufficiency("X1", "Y")
 ```
-
-
-
-
     [0.0, 0.4317658471578494]
 
 
@@ -208,9 +196,6 @@ Instead of the interval, we can obtain the list of individual queries:
 infDC3ID.set_interval_result(False)
 infDC3ID.prob_sufficiency("X1", "Y")
 ```
-
-
-
 
     [0.3702430867734918,
      0.2277520565325892,
@@ -231,8 +216,6 @@ infDC3ID = DCCC_imprecise_empirical(model, data, perturbation=0.05, num_runs=5)
 infDC3ID.set_interval_result(False)
 infDC3ID.prob_sufficiency("X1", "Y")
 ```
-
-
 
 
     [0.22775205653259195,
