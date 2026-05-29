@@ -61,8 +61,7 @@ model.draw()
 
 
     
-![png](inference_files/inference_8_0.png)
-    
+![Inference Output](examples/inference_files/inference_8_0.png)    
 
 
 
