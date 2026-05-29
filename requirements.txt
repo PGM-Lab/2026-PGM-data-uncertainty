@@ -1,0 +1,9 @@
+numpy~=1.26.4
+pandas~=2.0.3
+networkx~=2.6.3
+matplotlib~=3.5.2
+matplotlib-inline~=0.1.7
+more-itertools~=10.2.0
+python-sat~=0.1.8.dev15
+pyAgrum~=1.12.1
+bcause @ git+https://github.com/PGM-Lab/bcause@dev-czeros
